@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><title>Demander un audit</title>
+<style>body{font-family:Arial,sans-serif;max-width:800px;margin:40px auto;padding:0 20px;line-height:1.6}
+nav a{margin-right:15px;text-decoration:none;color:#2b2d42}</style></head>
+<body>
+<nav><a href="/">Accueil</a> | <a href="/services.html">Services</a> | <a href="/a-propos.html">À propos</a> | <a href="/demande-audit.html">Demander un audit</a></nav>
+<h1>Demander un audit ou un diagnostic</h1>
+<p>Choisissez le type d'audit qui correspond à votre besoin, envoyez votre demande, et vous recevrez un email avec les détails sous 48h — suivi d'un lien de paiement Payoneer une fois le devis confirmé.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:20px 0;">
+<tr style="background:#2b2d42;color:white;"><th style="padding:10px;text-align:left;">Type d'audit</th><th style="padding:10px;text-align:left;">Tarif</th></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:10px;">Audit technique SEO (rapide)</td><td style="padding:10px;">49 $</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f5f5fa;"><td style="padding:10px;">Audit on-page complet</td><td style="padding:10px;">79 $</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:10px;">Audit off-page / netlinking</td><td style="padding:10px;">79 $</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f5f5fa;"><td style="padding:10px;">Audit SEO local / Google Business Profile</td><td style="padding:10px;">59 $</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:10px;">Diagnostic GEO/AEO (IA générative)</td><td style="padding:10px;">59 $</td></tr>
+<tr style="background:#f5f5fa;"><td style="padding:10px;"><strong>Audit complet (tous les piliers)</strong></td><td style="padding:10px;"><strong>199 $</strong></td></tr>
+</table>
+<p style="font-size:0.85em;color:#888;">Tarifs en dollars américains — base commune pour une clientèle internationale (Amérique du Nord/Europe), ajustables selon la complexité réelle du site après premier échange.</p>
+
+<form name="demande-audit" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html">
+  <input type="hidden" name="form-name" value="demande-audit" />
+  <p style="display:none;"><label>Ne pas remplir : <input name="bot-field" /></label></p>
+
+  <p><label>Votre nom :<br/><input type="text" name="nom" required style="width:100%;padding:8px;"/></label></p>
+  <p><label>Votre email :<br/><input type="email" name="email" required style="width:100%;padding:8px;"/></label></p>
+  <p><label>Site à auditer (URL) :<br/><input type="text" name="site" required style="width:100%;padding:8px;"/></label></p>
+  <p><label>Type d'audit souhaité :<br/>
+    <select name="type_audit" required style="width:100%;padding:8px;">
+      <option value="">-- Choisissez --</option>
+      <option value="Technique - 49$">Audit technique SEO — 49 $</option>
+      <option value="On-page - 79$">Audit on-page complet — 79 $</option>
+      <option value="Off-page - 79$">Audit off-page / netlinking — 79 $</option>
+      <option value="Local/GBP - 59$">Audit SEO local / GBP — 59 $</option>
+      <option value="GEO/AEO - 59$">Diagnostic GEO/AEO — 59 $</option>
+      <option value="Complet - 199$">Audit complet — 199 $</option>
+    </select>
+  </label></p>
+  <p><label>Objectif principal :<br/><textarea name="objectif" style="width:100%;padding:8px;" rows="3"></textarea></label></p>
+
+  <button type="submit" style="padding:10px 25px;background:#2b2d42;color:white;border:none;border-radius:4px;cursor:pointer;">Envoyer ma demande</button>
+</form>
+<p style="font-size:0.85em;color:#888;">En soumettant, vous recevrez une confirmation automatique par email, puis une réponse personnalisée sous 48h.</p>
+</body>
+</html>
