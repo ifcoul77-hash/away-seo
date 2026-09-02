@@ -1,34 +1,219 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head><meta charset="UTF-8"><title>Nos services — Audits SEO, AEO, GEO</title>
-<style>body{font-family:Arial,sans-serif;max-width:800px;margin:40px auto;padding:0 20px;line-height:1.6}
-nav a{margin-right:15px;text-decoration:none;color:#2b2d42} h2{color:#1a1a2e;border-bottom:2px solid #eee;padding-bottom:5px}</style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Away SEO</title>
+  <meta name="description" content="Detailed SEO, AEO and GEO services: technical audit, on-page, off-page, local SEO, and AI optimization.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<nav><a href="/">Accueil</a> | <a href="/services.html">Services</a> | <a href="/a-propos.html">À propos</a> | <a href="/demande-audit.html">Demander un audit</a></nav>
-<h1>Détail des services de consultation</h1>
 
-<h2>Audit technique SEO</h2>
-<p>Analyse de l'exploration et de l'indexation, du sitemap XML, du fichier robots.txt, des balises canoniques, des Core Web Vitals et de la vitesse de chargement. Rapport priorisé des blocages techniques.</p>
+  <nav>
+    <a href="/"><img src="/Logo.png" alt="Away SEO" class="logo"></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/" data-en="Home" data-fr="Accueil">Home</a>
+        <a href="/services.html" data-en="Services" data-fr="Services">Services</a>
+        <a href="/a-propos.html" data-en="About" data-fr="À propos">About</a>
+        <a href="/demande-audit.html" data-en="Request an audit" data-fr="Demander un audit">Request an audit</a>
+      </div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </nav>
 
-<h2>SEO on-page</h2>
-<p>Revue des titres, méta-descriptions, hiérarchie des balises d'en-tête, structure des URLs, qualité et pertinence du contenu, détection de la cannibalisation de mots-clés.</p>
+  <div class="container">
+    <div class="section-title">
+      <h2 data-en="Services &amp; Pricing" data-fr="Services &amp; Tarifs">Services &amp; Pricing</h2>
+      <p data-en="Each service can be ordered individually or combined into a full audit." data-fr="Chaque service peut être commandé individuellement ou combiné dans un audit complet.">Each service can be ordered individually or combined into a full audit.</p>
+    </div>
 
-<h2>SEO off-page &amp; netlinking</h2>
-<p>Audit du profil de backlinks existant, identification des liens toxiques, stratégie d'acquisition de liens légitimes (relations presse, partenariats, contenu à forte valeur).</p>
+    <!-- PRICE CARDS -->
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="price-icon">🔧</div>
+        <h3 data-en="Technical SEO Audit" data-fr="Audit technique SEO">Technical SEO Audit</h3>
+        <div class="price-amount"><span class="currency">$</span>49</div>
+        <div class="price-desc" data-en="Quick technical health check" data-fr="Vérification technique rapide">Quick technical health check</div>
+        <ul class="price-features">
+          <li data-en="Crawl &amp; index analysis" data-fr="Analyse d'exploration et d'indexation">Crawl &amp; index analysis</li>
+          <li data-en="Core Web Vitals" data-fr="Core Web Vitals">Core Web Vitals</li>
+          <li data-en="Site architecture review" data-fr="Revue de l'architecture du site">Site architecture review</li>
+          <li data-en="Mobile-friendliness check" data-fr="Vérification de la compatibilité mobile">Mobile-friendliness check</li>
+        </ul>
+        <a href="/demande-audit.html" class="price-btn" data-en="Request this audit" data-fr="Demander cet audit">Request this audit</a>
+      </div>
 
-<h2>SEO local &amp; Google Business Profile</h2>
-<p>Création et optimisation de fiche Google Business, stratégie de génération d'avis authentiques, gestion des réponses, visibilité dans les résultats de recherche géolocalisée.</p>
+      <div class="price-card">
+        <div class="price-icon">📝</div>
+        <h3 data-en="On-Page SEO Audit" data-fr="Audit on-page complet">On-Page SEO Audit</h3>
+        <div class="price-amount"><span class="currency">$</span>79</div>
+        <div class="price-desc" data-en="Full on-page optimization review" data-fr="Revue complète de l'optimisation on-page">Full on-page optimization review</div>
+        <ul class="price-features">
+          <li data-en="Title &amp; meta optimization" data-fr="Optimisation des titres et méta">Title &amp; meta optimization</li>
+          <li data-en="Heading structure audit" data-fr="Audit de la structure des titres">Heading structure audit</li>
+          <li data-en="Internal linking strategy" data-fr="Stratégie de maillage interne">Internal linking strategy</li>
+          <li data-en="Schema markup review" data-fr="Revue des données structurées">Schema markup review</li>
+        </ul>
+        <a href="/demande-audit.html" class="price-btn" data-en="Request this audit" data-fr="Demander cet audit">Request this audit</a>
+      </div>
 
-<h2>AEO — Answer Engine Optimization</h2>
-<p>Optimisation pour apparaître en réponse directe dans les résultats Google (featured snippets, position zéro) et via les assistants vocaux.</p>
+      <div class="price-card">
+        <div class="price-icon">🔗</div>
+        <h3 data-en="Off-Page / Link Building" data-fr="Off-page / Netlinking">Off-Page / Link Building</h3>
+        <div class="price-amount"><span class="currency">$</span>79</div>
+        <div class="price-desc" data-en="Backlink profile audit &amp; strategy" data-fr="Audit du profil de liens &amp; stratégie">Backlink profile audit &amp; strategy</div>
+        <ul class="price-features">
+          <li data-en="Backlink profile audit" data-fr="Audit du profil de backlinks">Backlink profile audit</li>
+          <li data-en="Competitor link analysis" data-fr="Analyse des liens concurrents">Competitor link analysis</li>
+          <li data-en="Toxic link identification" data-fr="Identification des liens toxiques">Toxic link identification</li>
+          <li data-en="Acquisition strategy" data-fr="Stratégie d'acquisition">Acquisition strategy</li>
+        </ul>
+        <a href="/demande-audit.html" class="price-btn" data-en="Request this audit" data-fr="Demander cet audit">Request this audit</a>
+      </div>
 
-<h2>GEO — Generative Engine Optimization</h2>
-<p>Structuration du contenu pour être cité et repris par les IA génératives conversationnelles (ChatGPT, Perplexity, Gemini, Grok).</p>
+      <div class="price-card">
+        <div class="price-icon">📍</div>
+        <h3 data-en="Local SEO / GBP" data-fr="SEO local / GBP">Local SEO / GBP</h3>
+        <div class="price-amount"><span class="currency">$</span>59</div>
+        <div class="price-desc" data-en="Google Business Profile optimization" data-fr="Optimisation de la fiche Google Business">Google Business Profile optimization</div>
+        <ul class="price-features">
+          <li data-en="GBP optimization" data-fr="Optimisation de la fiche Google">GBP optimization</li>
+          <li data-en="Review management strategy" data-fr="Stratégie de gestion des avis">Review management strategy</li>
+          <li data-en="Map Pack tactics" data-fr="Tactiques pour le Map Pack">Map Pack tactics</li>
+          <li data-en="NAP consistency check" data-fr="Vérification de la cohérence NAP">NAP consistency check</li>
+        </ul>
+        <a href="/demande-audit.html" class="price-btn" data-en="Request this audit" data-fr="Demander cet audit">Request this audit</a>
+      </div>
 
-<h2>Publicité payante (Google Ads / Meta Ads)</h2>
-<p>Structuration de campagnes, suivi de conversion, tests créatifs — en complément du travail organique, jamais en remplacement.</p>
+      <div class="price-card">
+        <div class="price-icon">🤖</div>
+        <h3 data-en="AEO &amp; GEO Diagnostic" data-fr="Diagnostic AEO &amp; GEO">AEO &amp; GEO Diagnostic</h3>
+        <div class="price-amount"><span class="currency">$</span>59</div>
+        <div class="price-desc" data-en="AI search engine optimization" data-fr="Optimisation pour les moteurs IA">AI search engine optimization</div>
+        <ul class="price-features">
+          <li data-en="Answer engine visibility" data-fr="Visibilité dans les moteurs de réponse">Answer engine visibility</li>
+          <li data-en="AI citation optimization" data-fr="Optimisation des citations par l'IA">AI citation optimization</li>
+          <li data-en="Structured data for AI" data-fr="Données structurées pour l'IA">Structured data for AI</li>
+          <li data-en="Brand mention tracking" data-fr="Suivi des mentions de marque">Brand mention tracking</li>
+        </ul>
+        <a href="/demande-audit.html" class="price-btn" data-en="Request this audit" data-fr="Demander cet audit">Request this audit</a>
+      </div>
 
-<p><a href="/demande-audit.html">Demander un audit gratuit de votre site →</a></p>
+      <div class="price-card featured">
+        <span class="price-badge" data-en="Best value" data-fr="Meilleur offre">Best value</span>
+        <div class="price-icon">⭐</div>
+        <h3 data-en="Full Audit" data-fr="Audit complet">Full Audit</h3>
+        <div class="price-amount"><span class="currency">$</span>199</div>
+        <div class="price-desc" data-en="All five pillars combined" data-fr="Les cinq piliers combinés">All five pillars combined</div>
+        <ul class="price-features">
+          <li data-en="Technical + On-Page + Off-Page" data-fr="Technique + On-page + Off-page">Technical + On-Page + Off-Page</li>
+          <li data-en="Local SEO + AEO/GEO" data-fr="SEO local + AEO/GEO">Local SEO + AEO/GEO</li>
+          <li data-en="Prioritized action plan" data-fr="Plan d'action priorisé">Prioritized action plan</li>
+          <li data-en="Follow-up Q&amp;A session" data-fr="Session de questions-réponses de suivi">Follow-up Q&amp;A session</li>
+        </ul>
+        <a href="/demande-audit.html" class="price-btn" data-en="Request this audit" data-fr="Demander cet audit">Request this audit</a>
+      </div>
+    </div>
+
+    <p class="pricing-note" style="text-align:center;" data-en="Prices in US dollars — adjustable based on the actual complexity of the site after initial contact." data-fr="Tarifs en dollars américains — ajustables selon la complexité réelle du site après premier échange.">Prices in US dollars — adjustable based on the actual complexity of the site after initial contact.</p>
+
+    <!-- DETAILED SECTIONS -->
+    <div class="service-section" id="technique">
+      <h2 data-en="Technical SEO Audit" data-fr="Audit technique SEO">Technical SEO Audit</h2>
+      <p class="service-desc" data-en="A deep-dive into the technical health of your site: how search engines crawl, render, and index your pages." data-fr="Un examen approfondi de la santé technique de votre site : comment les moteurs de recherche explorent, affichent et indexent vos pages.">A deep-dive into the technical health of your site: how search engines crawl, render, and index your pages.</p>
+      <ul>
+        <li data-en="Crawlability &amp; indexability analysis" data-fr="Analyse d'exploration et d'indexation">Crawlability &amp; indexability analysis</li>
+        <li data-en="Page speed &amp; Core Web Vitals" data-fr="Vitesse de chargement &amp; Core Web Vitals">Page speed &amp; Core Web Vitals</li>
+        <li data-en="Site architecture &amp; URL structure" data-fr="Architecture du site &amp; structure des URL">Site architecture &amp; URL structure</li>
+        <li data-en="Robots.txt, sitemaps, canonical tags" data-fr="Robots.txt, sitemaps, balises canoniques">Robots.txt, sitemaps, canonical tags</li>
+        <li data-en="Mobile-friendliness assessment" data-fr="Évaluation de la compatibilité mobile">Mobile-friendliness assessment</li>
+      </ul>
+      <span class="price-tag">$49</span>
+    </div>
+
+    <div class="service-section" id="onpage">
+      <h2 data-en="On-Page SEO" data-fr="SEO on-page">On-Page SEO</h2>
+      <p class="service-desc" data-en="Making sure every page is properly understood by Google — from titles to content structure." data-fr="S'assurer que chaque page est correctement comprise par Google — des titres à la structure du contenu.">Making sure every page is properly understood by Google — from titles to content structure.</p>
+      <ul>
+        <li data-en="Title tags &amp; meta descriptions" data-fr="Balises title &amp; méta-descriptions">Title tags &amp; meta descriptions</li>
+        <li data-en="Heading structure (H1–H6)" data-fr="Structure des titres (H1–H6)">Heading structure (H1–H6)</li>
+        <li data-en="Content quality &amp; keyword targeting" data-fr="Qualité du contenu &amp; ciblage des mots-clés">Content quality &amp; keyword targeting</li>
+        <li data-en="Internal linking strategy" data-fr="Stratégie de maillage interne">Internal linking strategy</li>
+        <li data-en="Schema markup / structured data" data-fr="Données structurées / schema markup">Schema markup / structured data</li>
+      </ul>
+      <span class="price-tag">$79</span>
+    </div>
+
+    <div class="service-section" id="offpage">
+      <h2 data-en="Off-Page SEO &amp; Link Building" data-fr="SEO off-page &amp; netlinking">Off-Page SEO &amp; Link Building</h2>
+      <p class="service-desc" data-en="Building authority through a clean, sustainable backlink profile." data-fr="Construire l'autorité grâce à un profil de liens propre et durable.">Building authority through a clean, sustainable backlink profile.</p>
+      <ul>
+        <li data-en="Backlink profile audit" data-fr="Audit du profil de backlinks">Backlink profile audit</li>
+        <li data-en="Competitor link analysis" data-fr="Analyse des liens des concurrents">Competitor link analysis</li>
+        <li data-en="Toxic link identification &amp; disavowal" data-fr="Identification et refus des liens toxiques">Toxic link identification &amp; disavowal</li>
+        <li data-en="Outreach &amp; acquisition strategy" data-fr="Stratégie d'acquisition et de prospection">Outreach &amp; acquisition strategy</li>
+      </ul>
+      <span class="price-tag">$79</span>
+    </div>
+
+    <div class="service-section" id="local">
+      <h2 data-en="Local SEO &amp; Google Business Profile" data-fr="SEO local &amp; Google Business Profile">Local SEO &amp; Google Business Profile</h2>
+      <p class="service-desc" data-en="Maximizing your visibility in local searches and Google Maps." data-fr="Maximiser votre visibilité dans les recherches locales et Google Maps.">Maximizing your visibility in local searches and Google Maps.</p>
+      <ul>
+        <li data-en="Google Business Profile optimization" data-fr="Optimisation de la fiche Google Business">Google Business Profile optimization</li>
+        <li data-en="Review management strategy" data-fr="Stratégie de gestion des avis">Review management strategy</li>
+        <li data-en="Map Pack visibility tactics" data-fr="Tactiques de visibilité dans le Map Pack">Map Pack visibility tactics</li>
+        <li data-en="Local citation consistency (NAP)" data-fr="Cohérence des citations locales (NAP)">Local citation consistency (NAP)</li>
+      </ul>
+      <span class="price-tag">$59</span>
+    </div>
+
+    <div class="service-section" id="aeo-geo">
+      <h2 data-en="AEO &amp; GEO — AI Optimization" data-fr="AEO &amp; GEO — Optimisation IA">AEO &amp; GEO — AI Optimization</h2>
+      <p class="service-desc" data-en="Getting cited in direct answers and AI-generated responses from ChatGPT, Perplexity, Gemini, and Google AI Overviews." data-fr="Être cité en réponse directe et dans les réponses générées par ChatGPT, Perplexity, Gemini et Google AI Overviews.">Getting cited in direct answers and AI-generated responses from ChatGPT, Perplexity, Gemini, and Google AI Overviews.</p>
+      <ul>
+        <li data-en="Answer engine visibility assessment" data-fr="Évaluation de la visibilité dans les moteurs de réponse">Answer engine visibility assessment</li>
+        <li data-en="Content optimization for AI citations" data-fr="Optimisation du contenu pour les citations par l'IA">Content optimization for AI citations</li>
+        <li data-en="Structured data for answer engines" data-fr="Données structurées pour les moteurs de réponse">Structured data for answer engines</li>
+        <li data-en="Brand mention tracking across AI tools" data-fr="Suivi des mentions de marque dans les outils IA">Brand mention tracking across AI tools</li>
+      </ul>
+      <span class="price-tag">$59</span>
+    </div>
+
+    <div class="service-section" id="complet">
+      <h2 data-en="Full Audit — All Pillars" data-fr="Audit complet — Tous les piliers">Full Audit — All Pillars</h2>
+      <p class="service-desc" data-en="A comprehensive audit covering technical, on-page, off-page, local, and AEO/GEO — the complete picture of your online visibility." data-fr="Un audit complet couvrant technique, on-page, off-page, local et AEO/GEO — la vision complète de votre visibilité en ligne.">A comprehensive audit covering technical, on-page, off-page, local, and AEO/GEO — the complete picture of your online visibility.</p>
+      <ul>
+        <li data-en="All five individual audits combined" data-fr="Les cinq audits individuels combinés">All five individual audits combined</li>
+        <li data-en="Prioritized action plan with timelines" data-fr="Plan d'action priorisé avec échéances">Prioritized action plan with timelines</li>
+        <li data-en="Follow-up Q&amp;A session included" data-fr="Session de questions-réponses de suivi incluse">Follow-up Q&amp;A session included</li>
+      </ul>
+      <span class="price-tag">$199</span>
+    </div>
+
+    <div class="cta-banner">
+      <h2 data-en="Ready to get started?" data-fr="Prêt à commencer ?">Ready to get started?</h2>
+      <p data-en="Send your request and get a response within 48 hours." data-fr="Envoyez votre demande et recevez une réponse sous 48h.">Send your request and get a response within 48 hours.</p>
+      <a href="/demande-audit.html" class="cta-btn" data-en="Request an audit →" data-fr="Demander un audit →">Request an audit →</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Away SEO — SEO, AEO &amp; GEO Consultant<br>
+    <div class="footer-links">
+      <a href="/demande-audit.html" data-en="Request an audit" data-fr="Demander un audit">Request an audit</a> ·
+      <a href="/a-propos.html" data-en="Contact" data-fr="Contact">Contact</a>
+    </div>
+    <div class="footer-tagline" data-en="Serving clients in North America, Europe &amp; Australia" data-fr="Au service des clients en Amérique du Nord, Europe &amp; Australie">Serving clients in North America, Europe &amp; Australia</div>
+  </footer>
+
+  <script src="/js/main.js"></script>
 </body>
 </html>

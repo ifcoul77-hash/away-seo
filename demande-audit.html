@@ -1,252 +1,94 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demander un audit — Away SEO</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: #1e293b;
-      background: #ffffff;
-    }
-
-    /* Navigation */
-    nav {
-      text-align: center;
-      padding: 24px 20px;
-      border-bottom: 1px solid #e2e8f0;
-    }
-
-    nav a {
-      color: #334155;
-      text-decoration: none;
-      margin: 0 14px;
-      font-size: 15px;
-    }
-
-    nav a:hover {
-      color: #0f172a;
-    }
-
-    /* Contenu */
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 50px 20px 80px;
-    }
-
-    h1 {
-      font-size: 32px;
-      margin-bottom: 16px;
-      color: #0f172a;
-    }
-
-    .intro {
-      color: #475569;
-      margin-bottom: 36px;
-      font-size: 16px;
-    }
-
-    /* Tableau des tarifs */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 16px;
-      font-size: 15px;
-    }
-
-    thead {
-      background: #1e293b;
-      color: white;
-    }
-
-    th, td {
-      padding: 14px 18px;
-      text-align: left;
-    }
-
-    th:last-child, td:last-child {
-      text-align: right;
-    }
-
-    tbody tr:nth-child(even) {
-      background: #f1f5f9;
-    }
-
-    tbody tr:nth-child(odd) {
-      background: #ffffff;
-    }
-
-    .note {
-      font-size: 13px;
-      color: #64748b;
-      margin-bottom: 40px;
-    }
-
-    /* Formulaire */
-    .audit-form {
-      margin-top: 10px;
-    }
-
-    .form-group {
-      margin-bottom: 22px;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 7px;
-      font-weight: 500;
-      color: #1e293b;
-      font-size: 15px;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 12px 14px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font-size: 15px;
-      background: #ffffff;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      font-family: inherit;
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: #1e293b;
-      box-shadow: 0 0 0 3px rgba(30, 41, 59, 0.1);
-    }
-
-    .submit-btn {
-      width: 100%;
-      background-color: #1e293b;
-      color: white;
-      border: none;
-      padding: 14px;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background-color 0.2s;
-      margin-top: 8px;
-    }
-
-    .submit-btn:hover {
-      background-color: #0f172a;
-    }
-  </style>
+  <title>Request an audit — Away SEO</title>
+  <meta name="description" content="Request an SEO, AEO or GEO audit. Choose the type that fits your needs and get a response within 48 hours.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
   <nav>
-    <a href="/">Accueil</a>
-    <a href="/services">Services</a>
-    <a href="/a-propos">À propos</a>
-    <a href="/demande-audit">Demander un audit</a>
+    <a href="/"><img src="/Logo.png" alt="Away SEO" class="logo"></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/" data-en="Home" data-fr="Accueil">Home</a>
+        <a href="/services.html" data-en="Services" data-fr="Services">Services</a>
+        <a href="/a-propos.html" data-en="About" data-fr="À propos">About</a>
+        <a href="/demande-audit.html" data-en="Request an audit" data-fr="Demander un audit">Request an audit</a>
+      </div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </div>
   </nav>
 
-  <div class="container">
-    <h1>Demander un audit ou un diagnostic</h1>
-    
-    <p class="intro">
-      Choisissez le type d'audit qui correspond à votre besoin, envoyez votre demande, 
-      et vous recevrez un email avec les détails sous 48h — suivi d'un lien de paiement 
-      Payoneer une fois le devis confirmé.
-    </p>
+  <div class="container container-narrow">
+    <div class="section-title">
+      <h2 data-en="Request an audit" data-fr="Demander un audit">Request an audit</h2>
+      <p data-en="Choose the type of audit, send your request, and get a response within 48 hours." data-fr="Choisissez le type d'audit, envoyez votre demande, et recevez une réponse sous 48h.">Choose the type of audit, send your request, and get a response within 48 hours.</p>
+    </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Type d'audit</th>
-          <th>Tarif</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Audit technique SEO (rapide)</td>
-          <td>49 $</td>
-        </tr>
-        <tr>
-          <td>Audit on-page complet</td>
-          <td>79 $</td>
-        </tr>
-        <tr>
-          <td>Audit off-page / netlinking</td>
-          <td>79 $</td>
-        </tr>
-        <tr>
-          <td>Audit SEO local / Google Business Profile</td>
-          <td>59 $</td>
-        </tr>
-        <tr>
-          <td>Diagnostic GEO/AEO (IA générative)</td>
-          <td>59 $</td>
-        </tr>
-        <tr>
-          <td><strong>Audit complet (tous les piliers)</strong></td>
-          <td><strong>199 $</strong></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="about-card">
+      <form action="https://formspree.io/f/maeyeopd" method="POST">
+        <input type="hidden" name="_subject" value="Demande d'audit - Away SEO">
 
-    <p class="note">
-      Tarifs en dollars américains — base commune pour une clientèle internationale 
-      (Amérique du Nord/Europe), ajustables selon la complexité réelle du site après premier échange.
-    </p>
+        <div class="form-group">
+          <label for="nom" data-en="Your name" data-fr="Votre nom">Your name</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
 
-    <!-- FORMULAIRE FORMSPREE -->
-    <form action="https://formspree.io/f/maeyeopd" method="POST" class="audit-form">
+        <div class="form-group">
+          <label for="email" data-en="Your email" data-fr="Votre email">Your email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-      <div class="form-group">
-        <label for="name">Votre nom</label>
-        <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
-      </div>
+        <div class="form-group">
+          <label for="site" data-en="Website to audit (URL)" data-fr="Site à auditer (URL)">Website to audit (URL)</label>
+          <input type="text" id="site" name="site" required>
+        </div>
 
-      <div class="form-group">
-        <label for="email">Votre email</label>
-        <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
-      </div>
+        <div class="form-group">
+          <label for="type_audit" data-en="Audit type" data-fr="Type d'audit">Audit type</label>
+          <select id="type_audit" name="type_audit" required>
+            <option value="" data-en="-- Choose --" data-fr="-- Choisissez --">-- Choose --</option>
+            <option value="Technique - $49">Technical SEO Audit — $49</option>
+            <option value="On-page - $79">Full on-page audit — $79</option>
+            <option value="Off-page - $79">Off-page / link building — $79</option>
+            <option value="Local/GBP - $59">Local SEO / GBP — $59</option>
+            <option value="GEO/AEO - $59">GEO/AEO diagnostic — $59</option>
+            <option value="Complet - $199">Full audit — $199</option>
+          </select>
+        </div>
 
-      <div class="form-group">
-        <label for="website">Site à auditer (URL)</label>
-        <input type="url" id="website" name="website" placeholder="https://www.exemple.com" required>
-      </div>
+        <div class="form-group">
+          <label for="objectif" data-en="Main goal" data-fr="Objectif principal">Main goal</label>
+          <textarea id="objectif" name="objectif" rows="3"></textarea>
+        </div>
 
-      <div class="form-group">
-        <label for="audit-type">Type d'audit souhaité</label>
-        <select id="audit-type" name="audit_type" required>
-          <option value="">-- Sélectionnez un type d'audit --</option>
-          <option value="Audit technique SEO (49$)">Audit technique SEO (49 $)</option>
-          <option value="Audit on-page complet (79$)">Audit on-page complet (79 $)</option>
-          <option value="Audit off-page / netlinking (79$)">Audit off-page / netlinking (79 $)</option>
-          <option value="Audit SEO local / Google Business Profile (59$)">Audit SEO local / Google Business Profile (59 $)</option>
-          <option value="Diagnostic GEO/AEO (59$)">Diagnostic GEO/AEO (59 $)</option>
-          <option value="Audit complet (199$)">Audit complet (199 $)</option>
-        </select>
-      </div>
+        <button type="submit" class="btn-submit" data-en="Send my request" data-fr="Envoyer ma demande">Send my request</button>
+      </form>
+      <p class="pricing-note" style="text-align:center;margin-top:16px;" data-en="You'll receive an automatic email confirmation, then a personalized response within 48 hours. Payment via Payoneer after quote validation." data-fr="Vous recevrez une confirmation automatique par email, puis une réponse personnalisée sous 48h. Paiement via Payoneer après validation du devis.">You'll receive an automatic email confirmation, then a personalized response within 48 hours. Payment via Payoneer after quote validation.</p>
+    </div>
 
-      <div class="form-group">
-        <label for="message">Message / Précisions (optionnel)</label>
-        <textarea id="message" name="message" rows="4" placeholder="Précisez votre besoin si nécessaire..."></textarea>
-      </div>
-
-      <input type="hidden" name="_subject" value="Nouvelle demande d'audit - Away SEO">
-
-      <button type="submit" class="submit-btn">Envoyer ma demande</button>
-    </form>
+    <p class="pricing-note" style="text-align:center;" data-en="All prices in US dollars. See the full breakdown on the Services page." data-fr="Tous les prix sont en dollars américains. Voir le détail complet sur la page Services.">All prices in US dollars. See the full breakdown on the Services page.</p>
+    <p style="text-align:center;margin-top:8px;"><a href="/services.html" data-en="← Back to services" data-fr="← Retour aux services">← Back to services</a></p>
   </div>
 
+  <footer>
+    © 2026 Away SEO — SEO, AEO &amp; GEO Consultant<br>
+    <div class="footer-links">
+      <a href="/demande-audit.html" data-en="Request an audit" data-fr="Demander un audit">Request an audit</a> ·
+      <a href="/a-propos.html" data-en="Contact" data-fr="Contact">Contact</a>
+    </div>
+    <div class="footer-tagline" data-en="Serving clients in North America, Europe &amp; Australia" data-fr="Au service des clients en Amérique du Nord, Europe &amp; Australie">Serving clients in North America, Europe &amp; Australia</div>
+  </footer>
+
+  <script src="/js/main.js"></script>
 </body>
 </html>
