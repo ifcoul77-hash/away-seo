@@ -4,10 +4,10 @@
 
 ## Pages
 
-- [Home](https://eway-seo.netlify.app/) — Online visibility diagnostics & strategy. Specialties, client reviews, FAQ.
-- [Services & Pricing](https://eway-seo.netlify.app/services.html) — Detailed SEO, AEO and GEO services: technical audit ($49), on-page ($79), off-page ($79), local ($59), AEO/GEO ($59), full audit ($199).
-- [About](https://eway-seo.netlify.app/a-propos.html) — About the consultant, expertise, and direct contact form.
-- [Request an audit](https://eway-seo.netlify.app/demande-audit.html) — Form to request a specific audit type. Response within 48 hours.
+- [Home](https://away-seo.netlify.app/) — Online visibility diagnostics & strategy. Specialties, client reviews, FAQ.
+- [Services & Pricing](https://away-seo.netlify.app/services.html) — Detailed SEO, AEO and GEO services: technical audit ($49), on-page ($79), off-page ($79), local ($59), AEO/GEO ($59), full audit ($199).
+- [About](https://away-seo.netlify.app/a-propos.html) — About the consultant, expertise, and direct contact form.
+- [Request an audit](https://away-seo.netlify.app/demande-audit.html) — Form to request a specific audit type. Response within 48 hours.
 
 ## Services
 

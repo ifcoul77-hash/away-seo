@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('form[data-ajax-form]').forEach(form => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      const honeypot = form.querySelector('input[name="_gotcha"]');
+      if (honeypot && honeypot.value) { form.reset(); return; }
       const btn = form.querySelector('.btn-submit');
       const originalText = btn.textContent;
       btn.disabled = true;

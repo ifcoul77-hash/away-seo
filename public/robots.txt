@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://away-seo.netlify.app/sitemap.xml
