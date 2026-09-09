@@ -4,19 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank you — Away SEO</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://away-seo.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
   <nav>
-    <a href="/"><img src="/Logo.png" alt="Away SEO" class="logo"></a>
+    <a href="/"><img src="/logo.webp" alt="Away SEO" class="logo" width="44" height="44"></a>
     <div class="nav-right">
       <div class="nav-links">
         <a href="/" data-en="Home" data-fr="Accueil">Home</a>
         <a href="/services.html" data-en="Services" data-fr="Services">Services</a>
+        <a href="/avis.html" data-en="Reviews" data-fr="Avis">Reviews</a>
         <a href="/a-propos.html" data-en="About" data-fr="À propos">About</a>
         <a href="/demande-audit.html" data-en="Request an audit" data-fr="Demander un audit">Request an audit</a>
       </div>
@@ -31,6 +38,7 @@
     <div class="merci-box">
       <h1 data-en="Thank you!" data-fr="Merci !">Thank you!</h1>
       <p data-en="Your message has been sent. You'll receive a response within 48 hours." data-fr="Votre message a été envoyé. Vous recevrez une réponse sous 48h.">Your message has been sent. You'll receive a response within 48 hours.</p>
+      <p class="merci-redirect-note" data-en="You'll be redirected to the homepage in a few seconds..." data-fr="Vous allez être redirigé vers l'accueil dans quelques secondes...">You'll be redirected to the homepage in a few seconds...</p>
       <a href="/" class="btn-back" data-en="Back to home" data-fr="Retour à l'accueil">Back to home</a>
     </div>
   </div>
@@ -41,9 +49,12 @@
       <a href="/demande-audit.html" data-en="Request an audit" data-fr="Demander un audit">Request an audit</a> ·
       <a href="/a-propos.html" data-en="Contact" data-fr="Contact">Contact</a>
     </div>
-    <div class="footer-tagline" data-en="Serving clients in North America, Europe &amp; Australia" data-fr="Au service des clients en Amérique du Nord, Europe &amp; Australie">Serving clients in North America, Europe &amp; Australia</div>
+    <div class="footer-tagline">🌐 <span data-en="Serving clients worldwide" data-fr="Au service des clients à l'international">Serving clients worldwide</span></div>
   </footer>
 
   <script src="/js/main.js"></script>
+  <script>
+    setTimeout(function () { window.location.href = '/'; }, 5000);
+  </script>
 </body>
 </html>

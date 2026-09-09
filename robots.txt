@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://VOTRE-SITE.netlify.app/sitemap.xml
+
+Sitemap: https://away-seo.com/sitemap.xml

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Reviews — Away SEO</title>
+  <meta name="description" content="Read what clients say about Away SEO, and leave your own review. All reviews are moderated before publishing.">
+  <link rel="canonical" href="https://away-seo.com/avis.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": { "@type": "Organization", "name": "Away SEO" },
+    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a href="/"><img src="/logo.webp" alt="Away SEO" class="logo" width="44" height="44"></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/" data-en="Home" data-fr="Accueil">Home</a>
+        <a href="/services.html" data-en="Services" data-fr="Services">Services</a>
+        <a href="/avis.html" data-en="Reviews" data-fr="Avis">Reviews</a>
+        <a href="/a-propos.html" data-en="About" data-fr="À propos">About</a>
+        <a href="/demande-audit.html" data-en="Request an audit" data-fr="Demander un audit">Request an audit</a>
+      </div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="section-title">
+      <h2 data-en="Client Reviews" data-fr="Avis Clients">Client Reviews</h2>
+      <p data-en="Read what clients say about working with Away SEO. You can leave your own review below." data-fr="Lisez ce que les clients disent de leur collaboration avec Away SEO. Vous pouvez laisser votre propre avis ci-dessous.">Read what clients say about working with Away SEO. You can leave your own review below.</p>
+    </div>
+
+    <div id="reviews-list" class="testimonial-grid">
+      <p class="loading-text" data-en="Loading reviews..." data-fr="Chargement des avis...">Loading reviews...</p>
+    </div>
+
+    <div class="review-form-wrapper">
+      <div class="section-title" style="margin-top:50px;">
+        <h3 data-en="Leave a review" data-fr="Laisser un avis">Leave a review</h3>
+        <p data-en="Share your experience. All reviews are moderated before publishing." data-fr="Partagez votre expérience. Tous les avis sont modérés avant publication.">Share your experience. All reviews are moderated before publishing.</p>
+      </div>
+
+      <div class="about-card">
+        <form id="review-form">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+
+          <div class="form-group">
+            <label for="r-name" data-en="Your name" data-fr="Votre nom">Your name</label>
+            <input type="text" id="r-name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="r-location" data-en="Your location (optional)" data-fr="Votre lieu (facultatif)">Your location (optional)</label>
+            <input type="text" id="r-location" name="location">
+          </div>
+
+          <div class="form-group">
+            <label data-en="Your rating" data-fr="Votre note">Your rating</label>
+            <div class="star-rating" id="star-rating">
+              <button type="button" class="star-btn" data-value="1" aria-label="1 star">★</button>
+              <button type="button" class="star-btn" data-value="2" aria-label="2 stars">★</button>
+              <button type="button" class="star-btn" data-value="3" aria-label="3 stars">★</button>
+              <button type="button" class="star-btn" data-value="4" aria-label="4 stars">★</button>
+              <button type="button" class="star-btn" data-value="5" aria-label="5 stars">★</button>
+            </div>
+            <input type="hidden" id="r-rating" name="rating" value="5" required>
+          </div>
+
+          <div class="form-group">
+            <label for="r-text" data-en="Your review" data-fr="Votre avis">Your review</label>
+            <textarea id="r-text" name="text" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit" data-en="Submit my review" data-fr="Publier mon avis">Submit my review</button>
+          <p class="form-status" id="review-status" style="text-align:center;margin-top:14px;font-size:14px;display:none;"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Away SEO — SEO, AEO &amp; GEO Consultant<br>
+    <div class="footer-links">
+      <a href="/demande-audit.html" data-en="Request an audit" data-fr="Demander un audit">Request an audit</a> ·
+      <a href="/avis.html" data-en="Reviews" data-fr="Avis">Reviews</a> ·
+      <a href="/a-propos.html" data-en="Contact" data-fr="Contact">Contact</a>
+    </div>
+    <div class="footer-tagline">🌐 <span data-en="Serving clients worldwide" data-fr="Au service des clients à l'international">Serving clients worldwide</span></div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script type="module" src="/js/reviews.js"></script>
+</body>
+</html>
