@@ -95,13 +95,23 @@ document.addEventListener('DOMContentLoaded', () => {
       try {
         const siteKey = form.getAttribute('data-recaptcha-site-key');
         const formData = new FormData(form);
-        if (siteKey && window.grecaptcha) {
-          const token = await new Promise((resolve, reject) => {
-            grecaptcha.ready(() => {
-              grecaptcha.execute(siteKey, { action: 'submit' }).then(resolve).catch(reject);
-            });
-          });
-          formData.append('g-recaptcha-response', token);
+        if (siteKey) {
+          try {
+            const token = await Promise.race([
+              new Promise((resolve, reject) => {
+                if (!window.grecaptcha) { reject(new Error('grecaptcha not loaded')); return; }
+                grecaptcha.ready(() => {
+                  grecaptcha.execute(siteKey, { action: 'submit' }).then(resolve).catch(reject);
+                });
+              }),
+              new Promise((_, reject) => setTimeout(() => reject(new Error('recaptcha timeout')), 3000))
+            ]);
+            formData.append('g-recaptcha-response', token);
+          } catch (recaptchaErr) {
+            // reCAPTCHA blocked, slow, or failed to load (ad-blocker, network, etc.)
+            // Fail OPEN: submit the form anyway rather than silently losing the lead.
+            console.warn('reCAPTCHA unavailable, submitting without it:', recaptchaErr.message);
+          }
         }
         const response = await fetch(form.action, {
           method: 'POST',
