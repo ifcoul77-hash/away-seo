@@ -25,6 +25,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // ===== MOBILE NAV TOGGLE (hamburger) =====
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!navLinks.classList.contains('open')) return;
+      if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   // ===== LANGUAGE TOGGLE =====
   const langBtns = document.querySelectorAll('.lang-btn');
   const savedLang = localStorage.getItem('site-lang');
@@ -70,7 +93,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
+        const siteKey = form.getAttribute('data-recaptcha-site-key');
         const formData = new FormData(form);
+        if (siteKey && window.grecaptcha) {
+          const token = await new Promise((resolve, reject) => {
+            grecaptcha.ready(() => {
+              grecaptcha.execute(siteKey, { action: 'submit' }).then(resolve).catch(reject);
+            });
+          });
+          formData.append('g-recaptcha-response', token);
+        }
         const response = await fetch(form.action, {
           method: 'POST',
           body: formData,

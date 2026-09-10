@@ -20,17 +20,19 @@
   <nav>
     <a href="/"><img src="/logo.webp" alt="Away SEO" class="logo" width="44" height="44"></a>
     <div class="nav-right">
-      <div class="nav-links">
+      <div class="nav-links" id="navLinks">
         <a href="/" data-en="Home" data-fr="Accueil">Home</a>
         <a href="/services.html" data-en="Services" data-fr="Services">Services</a>
-        <a href="/avis.html" data-en="Reviews" data-fr="Avis">Reviews</a>
-        <a href="/a-propos.html" data-en="About" data-fr="À propos">About</a>
         <a href="/demande-audit.html" data-en="Request an audit" data-fr="Demander un audit">Request an audit</a>
+        <a href="/a-propos.html" data-en="About" data-fr="À propos">About</a>
       </div>
       <div class="lang-toggle">
         <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="fr">FR</button>
       </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
@@ -51,6 +53,10 @@
     </div>
     <div class="footer-tagline">🌐 <span data-en="Serving clients worldwide" data-fr="Au service des clients à l'international">Serving clients worldwide</span></div>
   </footer>
+
+  <a href="/avis.html" class="fab-reviews" aria-label="Avis clients">
+    <span class="fab-star">★</span><span class="fab-text" data-en="Reviews" data-fr="Avis">Reviews</span>
+  </a>
 
   <script src="/js/main.js"></script>
   <script>
