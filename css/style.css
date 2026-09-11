@@ -902,3 +902,19 @@ footer a:hover { color: var(--amber); }
   .cookie-consent { flex-direction: column; align-items: stretch; text-align: center; padding: 16px 16px; }
   .cookie-consent-actions { justify-content: center; }
 }
+
+/* ===== REVIEWS CTA BOX (homepage, no fake testimonials) ===== */
+.reviews-cta-box {
+  text-align: center;
+  background: var(--bg-light, #f8fafc);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md, 12px);
+  padding: 36px 24px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.reviews-cta-box p {
+  color: var(--slate-light);
+  margin: 0 0 18px;
+  font-size: 15px;
+}
