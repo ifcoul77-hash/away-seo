@@ -106,16 +106,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const honeypot = form.querySelector('input[name="_gotcha"]');
       if (honeypot && honeypot.value) {
-        // Bot detected: show the SAME success message as a real submission
-        // (never reveal the trap), reset the form, but do NOT actually send anything.
-        form.reset();
-        btn.textContent = '✓';
+        // Something filled the hidden trap field (bot, or a browser autofill
+        // mistake on a real visitor). Be honest: tell them to retry by typing
+        // manually rather than falsely claiming success.
+        btn.textContent = originalText;
         statusEl.style.display = 'block';
-        statusEl.style.color = '#10b981';
+        statusEl.style.color = '#dc2626';
         statusEl.textContent = (document.documentElement.lang === 'fr')
-          ? 'Message envoyé ! Redirection en cours...'
-          : 'Message sent! Redirecting...';
-        setTimeout(() => { window.location.href = '/merci.html'; }, 1500);
+          ? 'Le message n\u2019a pas pu être envoyé. Veuillez remplir le formulaire en tapant chaque champ manuellement (sans remplissage automatique) et réessayer.'
+          : 'The message could not be sent. Please fill in the form by typing each field manually (no autofill) and try again.';
         return;
       }
 
@@ -135,9 +134,9 @@ document.addEventListener('DOMContentLoaded', () => {
           statusEl.style.display = 'block';
           statusEl.style.color = '#10b981';
           statusEl.textContent = (document.documentElement.lang === 'fr')
-            ? "Message envoyé ! Un acompte de 30 à 50 % vous sera demandé pour démarrer l'audit, solde à la livraison. Redirection en cours..."
-            : 'Message sent! A 30-50% deposit will be requested to start the audit, balance due on delivery. Redirecting...';
-          setTimeout(() => { window.location.href = '/merci.html'; }, 2200);
+            ? 'Message envoyé ! Redirection en cours...'
+            : 'Message sent! Redirecting...';
+          setTimeout(() => { window.location.href = '/merci.html'; }, 1500);
         } else {
           const errData = await response.json().catch(() => ({}));
           btn.textContent = originalText;
