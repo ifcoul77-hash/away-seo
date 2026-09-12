@@ -25,6 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // ===== BACK TO TOP BUTTON =====
+  const backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+
   // ===== MOBILE NAV TOGGLE (hamburger) =====
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
@@ -77,12 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('form[data-ajax-form]').forEach(form => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const honeypot = form.querySelector('input[name="_gotcha"]');
-      if (honeypot && honeypot.value) { form.reset(); return; }
       const btn = form.querySelector('.btn-submit');
       const originalText = btn.textContent;
-      btn.disabled = true;
-      btn.textContent = '...';
 
       let statusEl = form.querySelector('.form-status');
       if (!statusEl) {
@@ -91,6 +103,24 @@ document.addEventListener('DOMContentLoaded', () => {
         statusEl.style.cssText = 'text-align:center;margin-top:14px;font-size:14px;display:none;';
         btn.insertAdjacentElement('afterend', statusEl);
       }
+
+      const honeypot = form.querySelector('input[name="_gotcha"]');
+      if (honeypot && honeypot.value) {
+        // Bot detected: show the SAME success message as a real submission
+        // (never reveal the trap), reset the form, but do NOT actually send anything.
+        form.reset();
+        btn.textContent = '✓';
+        statusEl.style.display = 'block';
+        statusEl.style.color = '#10b981';
+        statusEl.textContent = (document.documentElement.lang === 'fr')
+          ? 'Message envoyé ! Redirection en cours...'
+          : 'Message sent! Redirecting...';
+        setTimeout(() => { window.location.href = '/merci.html'; }, 1500);
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = '...';
 
       try {
         const formData = new FormData(form);
@@ -105,9 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
           statusEl.style.display = 'block';
           statusEl.style.color = '#10b981';
           statusEl.textContent = (document.documentElement.lang === 'fr')
-            ? 'Message envoyé ! Redirection en cours...'
-            : 'Message sent! Redirecting...';
-          setTimeout(() => { window.location.href = '/merci.html'; }, 1500);
+            ? "Message envoyé ! Un acompte de 30 à 50 % vous sera demandé pour démarrer l'audit, solde à la livraison. Redirection en cours..."
+            : 'Message sent! A 30-50% deposit will be requested to start the audit, balance due on delivery. Redirecting...';
+          setTimeout(() => { window.location.href = '/merci.html'; }, 2200);
         } else {
           const errData = await response.json().catch(() => ({}));
           btn.textContent = originalText;
