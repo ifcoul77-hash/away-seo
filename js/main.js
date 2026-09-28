@@ -64,30 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ===== LANGUAGE TOGGLE =====
-  const langBtns = document.querySelectorAll('.lang-btn');
-  const savedLang = localStorage.getItem('site-lang');
-  const browserLang = (navigator.language || navigator.languages[0] || 'en').toLowerCase().startsWith('fr') ? 'fr' : 'en';
-  const initialLang = savedLang || browserLang;
-  applyLanguage(initialLang);
-
-  langBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.getAttribute('data-lang');
-      localStorage.setItem('site-lang', lang);
-      applyLanguage(lang);
-    });
-  });
-
-  function applyLanguage(lang) {
-    langBtns.forEach(b => {
-      b.classList.toggle('active', b.getAttribute('data-lang') === lang);
-    });
-    document.querySelectorAll('[data-en]').forEach(el => {
-      el.innerHTML = el.getAttribute('data-' + lang) || el.getAttribute('data-en');
-    });
-    document.documentElement.lang = lang === 'fr' ? 'fr' : 'en';
-  }
+  // ===== LANGUAGE =====
+  // One URL per language: / (EN), /fr/ (FR), /es/ (ES). No text swapping, no auto-redirect.
+  const PAGE_LANG = ['fr','es'].includes(document.documentElement.lang) ? document.documentElement.lang : 'en';
+  const T = (en, fr, es) => PAGE_LANG === 'fr' ? fr : (PAGE_LANG === 'es' ? es : en);
 
   // ===== FORM SUBMIT: clear fields + redirect home =====
   document.querySelectorAll('form[data-ajax-form]').forEach(form => {
@@ -112,9 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.textContent = originalText;
         statusEl.style.display = 'block';
         statusEl.style.color = '#dc2626';
-        statusEl.textContent = (document.documentElement.lang === 'fr')
-          ? 'Le message n\u2019a pas pu être envoyé. Veuillez remplir le formulaire en tapant chaque champ manuellement (sans remplissage automatique) et réessayer.'
-          : 'The message could not be sent. Please fill in the form by typing each field manually (no autofill) and try again.';
+        statusEl.textContent = T('The message could not be sent. Please fill in the form by typing each field manually (no autofill) and try again.', 'Le message n\u2019a pas pu être envoyé. Veuillez remplir le formulaire en tapant chaque champ manuellement (sans remplissage automatique) et réessayer.', "No se pudo enviar el mensaje. Rellena el formulario escribiendo cada campo manualmente (sin autocompletar) e inténtalo de nuevo.");
         return;
       }
 
@@ -133,28 +111,22 @@ document.addEventListener('DOMContentLoaded', () => {
           btn.textContent = '✓';
           statusEl.style.display = 'block';
           statusEl.style.color = '#10b981';
-          statusEl.textContent = (document.documentElement.lang === 'fr')
-            ? 'Message envoyé ! Redirection en cours...'
-            : 'Message sent! Redirecting...';
-          setTimeout(() => { window.location.href = '/merci.html'; }, 1500);
+          statusEl.textContent = T('Message sent! Redirecting...', 'Message envoyé ! Redirection en cours...', "¡Mensaje enviado! Redirigiendo...");
+          setTimeout(() => { window.location.href = T('/merci.html', '/fr/merci.html', '/es/gracias.html'); }, 1500);
         } else {
           const errData = await response.json().catch(() => ({}));
           btn.textContent = originalText;
           btn.disabled = false;
           statusEl.style.display = 'block';
           statusEl.style.color = '#dc2626';
-          statusEl.textContent = (document.documentElement.lang === 'fr')
-            ? 'Erreur lors de l\'envoi. Veuillez réessayer.'
-            : 'Error sending message. Please try again.';
+          statusEl.textContent = T('Error sending message. Please try again.', 'Erreur lors de l\'envoi. Veuillez réessayer.', "Error al enviar el mensaje. Inténtalo de nuevo.");
         }
       } catch (err) {
         btn.textContent = originalText;
         btn.disabled = false;
         statusEl.style.display = 'block';
         statusEl.style.color = '#dc2626';
-        statusEl.textContent = (document.documentElement.lang === 'fr')
-          ? 'Erreur réseau. Vérifiez votre connexion.'
-          : 'Network error. Check your connection.';
+        statusEl.textContent = T('Network error. Check your connection.', 'Erreur réseau. Vérifiez votre connexion.', "Error de red. Comprueba tu conexión.");
       }
     });
   });

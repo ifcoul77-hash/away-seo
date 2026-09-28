@@ -22,8 +22,18 @@
 ## Key Information
 
 - Response time: within 48 hours
-- Audit delivery: 3–7 business days
+- Audit delivery: 2–7 business days
 - Payment: secure payment link after quote validation
 - Currency: US dollars
-- Service area: worldwide (North America, Europe, Australia, and beyond)
-- Last updated: September 2026
+- Service area: worldwide. Primary markets: United States, Canada (English and French), United Kingdom. Secondary: France, Spain, Australia
+- Site languages: English (root URLs), French (/fr/), Spanish (/es/)
+- Last updated: September 28, 2026
+
+## Other languages
+
+- [Français](https://away-seo.com/fr/) — Audits SEO, AEO et GEO, tarifs en dollars US, réponse sous 48 h, livraison en 2 à 7 jours ouvrés.
+- [Español](https://away-seo.com/es/) — Auditorías SEO, AEO y GEO, precios en dólares, respuesta en 48 h, entrega en 2 a 7 días laborables.
+
+## Note on terminology
+
+GEO means Generative Engine Optimization (optimization for AI answer engines), not geolocation.

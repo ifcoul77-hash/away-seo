@@ -9,11 +9,13 @@ const reviewForm = document.getElementById('review-form');
 const reviewStatus = document.getElementById('review-status');
 
 function getLang() {
-  return localStorage.getItem('site-lang') || 'en';
+  return ['fr','es'].includes(document.documentElement.lang) ? document.documentElement.lang : 'en';
 }
 
+const ES_MSG = {"Could not load reviews. Please try again later.": "No se pudieron cargar las opiniones. Inténtalo de nuevo más tarde.", "No reviews yet. Be the first to leave one!": "Aún no hay opiniones. ¡Sé el primero en dejar una!", "Please fill in all required fields.": "Rellena todos los campos obligatorios.", "Something went wrong. Please try again.": "Algo ha salido mal. Inténtalo de nuevo.", "Thank you! Your review has been submitted and will appear after moderation.": "¡Gracias! Tu opinión se ha enviado y aparecerá tras la moderación."};
 function t(en, fr) {
-  return getLang() === 'fr' ? fr : en;
+  const l = getLang();
+  return l === 'fr' ? fr : (l === 'es' ? (ES_MSG[en] || en) : en);
 }
 
 function escapeHtml(str) {

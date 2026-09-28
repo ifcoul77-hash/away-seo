@@ -3,9 +3,8 @@
   const CONSENT_KEY = 'ga-consent';
 
   function currentLang() {
-    const saved = localStorage.getItem('site-lang');
-    if (saved === 'fr' || saved === 'en') return saved;
-    return navigator.language && navigator.language.startsWith('fr') ? 'fr' : 'en';
+    const l = document.documentElement.lang;
+    return l === 'fr' || l === 'es' ? l : 'en';
   }
 
   function loadGA4() {
@@ -35,6 +34,12 @@
         link: 'Privacy Policy',
         accept: 'Accept',
         decline: 'Decline'
+      },
+      es: {
+        message: 'Usamos Google Analytics para entender cómo usan los visitantes este sitio. Tus datos nos ayudan a mejorarlo. Consulta nuestra',
+        link: 'Política de privacidad',
+        accept: 'Aceptar',
+        decline: 'Rechazar'
       },
       fr: {
         message: "Nous utilisons Google Analytics pour comprendre comment les visiteurs utilisent ce site. Vos données nous aident à l'améliorer. Voir notre",
