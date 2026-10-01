@@ -1,14 +1,14 @@
 # Away SEO
 
-> Independent SEO, AEO & GEO consultant with 10+ years of experience. Audits, diagnostics, and actionable strategy for clients worldwide. All prices in USD.
+> Independent SEO, AEO & GEO consultant. Audits, diagnostics, and actionable strategy for clients worldwide. All prices in USD.
 
 ## Pages
 
 - [Home](https://away-seo.com/) — Online visibility diagnostics & strategy. Specialties, client reviews, FAQ.
 - [Services & Pricing](https://away-seo.com/services.html) — Detailed SEO, AEO and GEO services: technical audit ($49), on-page ($79), off-page ($79), local ($59), AEO/GEO ($59), full audit ($199).
-- [About](https://away-seo.com/a-propos.html) — About the consultant, expertise, and direct contact form.
-- [Client Reviews](https://away-seo.com/avis.html) — Read client reviews and leave your own. All reviews are moderated.
-- [Request an audit](https://away-seo.com/demande-audit.html) — Form to request a specific audit type. Response within 48 hours.
+- [About](https://away-seo.com/about.html) — About the consultant, expertise, and direct contact form.
+- [Client Reviews](https://away-seo.com/reviews.html) — Read client reviews and leave your own. All reviews are moderated.
+- [Request an audit](https://away-seo.com/request-audit.html) — Form to request a specific audit type. Response within 48 hours.
 
 ## Services
 
@@ -27,7 +27,7 @@
 - Currency: US dollars
 - Service area: worldwide. Primary markets: United States, Canada (English and French), United Kingdom. Secondary: France, Spain, Australia
 - Site languages: English (root URLs), French (/fr/), Spanish (/es/)
-- Last updated: September 28, 2026
+- Last updated: September 29, 2026
 
 ## Other languages
 
@@ -37,3 +37,6 @@
 ## Note on terminology
 
 GEO means Generative Engine Optimization (optimization for AI answer engines), not geolocation.
+
+## Free flash test
+- [Free flash test](https://away-seo.com/free-flash-test.html): up to 3 URLs, 3 priority findings within 3 business days, limited places each month.

@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
           statusEl.style.display = 'block';
           statusEl.style.color = '#10b981';
           statusEl.textContent = T('Message sent! Redirecting...', 'Message envoyé ! Redirection en cours...', "¡Mensaje enviado! Redirigiendo...");
-          setTimeout(() => { window.location.href = T('/merci.html', '/fr/merci.html', '/es/gracias.html'); }, 1500);
+          setTimeout(() => { window.location.href = T('/thank-you.html', '/fr/merci.html', '/es/gracias.html'); }, 1500);
         } else {
           const errData = await response.json().catch(() => ({}));
           btn.textContent = originalText;

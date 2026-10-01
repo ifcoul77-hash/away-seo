@@ -53,7 +53,7 @@
     banner.className = 'cookie-consent';
     banner.id = 'cookieConsent';
     banner.innerHTML =
-      '<p>' + t.message + ' <a href="/politique-de-confidentialite.html">' + t.link + '</a>.</p>' +
+      '<p>' + t.message + ' <a href="/privacy-policy.html">' + t.link + '</a>.</p>' +
       '<div class="cookie-consent-actions">' +
         '<button type="button" class="cookie-btn cookie-btn-decline" id="cookieDecline">' + t.decline + '</button>' +
         '<button type="button" class="cookie-btn cookie-btn-accept" id="cookieAccept">' + t.accept + '</button>' +
