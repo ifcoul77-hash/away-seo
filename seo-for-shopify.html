@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Shopify SEO Audit: Issues That Hurt Rankings | Away SEO</title>
-<meta content="The 5 Shopify SEO problems we find most often in audits — duplicate collection URLs, thin templated content, app bloat — and how to fix them." name="description"/><link href="https://away-seo.com/seo-for-shopify.html" rel="canonical"/><link href="https://away-seo.com/seo-for-shopify.html" hreflang="en" rel="alternate"/><link href="https://away-seo.com/fr/seo-pour-shopify.html" hreflang="fr" rel="alternate"/><link href="https://away-seo.com/es/seo-para-shopify.html" hreflang="es" rel="alternate"/><link href="https://away-seo.com/seo-for-shopify.html" hreflang="x-default" rel="alternate"/><meta content="website" property="og:type"/><meta content="Away SEO" property="og:site_name"/><meta content="Shopify SEO Audit: Issues That Hurt Rankings | Away SEO" property="og:title"/><meta content="The 5 Shopify SEO problems we find most often in audits — duplicate collection URLs, thin templated content, app bloat — and how to fix them." property="og:description"/><meta content="https://away-seo.com/seo-for-shopify.html" property="og:url"/><meta content="en_US" property="og:locale"/><meta content="https://away-seo.com/logo.webp" property="og:image"/><meta content="summary" property="twitter:card"/>
+<meta content="Five technical Shopify SEO checks: filter URLs, duplicate descriptions, titles, app weight and Product markup, with what Google documents." name="description"/><link href="https://away-seo.com/seo-for-shopify.html" rel="canonical"/><link href="https://away-seo.com/seo-for-shopify.html" hreflang="en" rel="alternate"/><link href="https://away-seo.com/fr/seo-pour-shopify.html" hreflang="fr" rel="alternate"/><link href="https://away-seo.com/es/seo-para-shopify.html" hreflang="es" rel="alternate"/><link href="https://away-seo.com/seo-for-shopify.html" hreflang="x-default" rel="alternate"/><meta content="website" property="og:type"/><meta content="Away SEO" property="og:site_name"/><meta content="Shopify SEO Audit: Issues That Hurt Rankings | Away SEO" property="og:title"/><meta content="Five technical Shopify SEO checks: filter URLs, duplicate descriptions, titles, app weight and Product markup, with what Google documents." property="og:description"/><meta content="https://away-seo.com/seo-for-shopify.html" property="og:url"/><meta content="en_US" property="og:locale"/><meta content="https://away-seo.com/logo.webp" property="og:image"/><meta content="summary" property="twitter:card"/>
 
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -15,6 +15,27 @@
 <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
 <link href="/css/style.css" rel="stylesheet"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Shopify SEO Audit: The 5 Technical Checks to Run First",
+  "description": "Five technical Shopify SEO checks: filter URLs, duplicate descriptions, titles, app weight and Product markup, with what Google documents.",
+  "author": {
+    "@type": "Person",
+    "name": "Ibrahima C."
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Away SEO",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://away-seo.com/logo.webp"
+    }
+  },
+  "dateModified": "2026-10-02",
+  "mainEntityOfPage": "https://away-seo.com/seo-for-shopify.html",
+  "inLanguage": "en"
+}</script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Service",
@@ -57,26 +78,34 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Does Shopify have built-in SEO problems compared to WordPress?",
+      "name": "Does Shopify have built-in SEO problems compared with WordPress?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not inherently. Shopify handles basic technical SEO (sitemaps, HTTPS, mobile rendering) well out of the box. The recurring issues come from how collections, filters, and themes are configured, not from the platform itself."
+        "text": "Not inherently. Shopify handles the technical basics (sitemaps, HTTPS, mobile rendering) by default. The recurring problems come from how collections, filters and themes are set up, not from the platform itself."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I fix Shopify SEO issues without a developer?",
+      "name": "Can you fix Shopify SEO without a developer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some fixes (title tags, meta descriptions, alt text, collection descriptions) can be done directly in the Shopify admin. Others (canonical rules on filtered URLs, structured data, theme performance) usually need theme code changes."
+        "text": "Some fixes (titles, meta descriptions, alt text, collection descriptions) are done directly in the Shopify admin. Others (canonical rules on filtered URLs, structured data, theme performance) usually require changes to the theme code."
       }
     },
     {
       "@type": "Question",
-      "name": "Which Shopify apps commonly slow down a store?",
+      "name": "Which Shopify apps most often slow a store down?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Any app injecting its own JavaScript on every page — reviews widgets, upsell popups, trackers — adds render-blocking weight. The number of apps matters less than what each one loads on pages that don't need it."
+        "text": "Any app that injects its own JavaScript on every page, such as review widgets, upsell popups or trackers, adds render-blocking weight. What each app loads on pages that do not need it matters more than the number of apps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the free flash test enough to know where my store stands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It covers up to 3 URLs and returns the 3 priority findings. It gives you a first read, not a full audit."
       }
     }
   ]
@@ -100,50 +129,86 @@
 </nav>
 <div class="container container-narrow article-body">
 <p style="margin-bottom:6px;"><a href="/blog.html" style="color:var(--slate-light);font-size:13px;text-decoration:none;">← Back to blog</a></p>
-<h1>Shopify SEO: the technical issues that actually hurt your rankings</h1>
-<div class="article-meta">By <strong>Ibrahima C.</strong> · Consultant SEO, AEO &amp; GEO, Away SEO</div>
-<div class="article-callout">
-<p><strong>In short:</strong> Shopify handles the SEO basics well. The problems we find in almost every audit come from collection filters, theme templates, and apps — not from the platform's core architecture.</p>
+<h1>Shopify SEO Audit: The 5 Technical Checks to Run First</h1>
+<div class="article-meta">By <strong>Ibrahima C.</strong> · Updated October 2, 2026 · 6 min read · SEO, AEO &amp; GEO Consultant, Away SEO</div>
+<div class="article-toc">
+<div class="article-toc-title">Contents</div>
+<ol>
+<li><a href="#platform">Shopify is not a separate kind of SEO, but it has sensitive spots</a></li>
+<li><a href="#checks">Five checks to run on your store</a></li>
+<li><a href="#checklist">A concrete checklist</a></li>
+<li><a href="#audit">What a Shopify audit at Away SEO covers</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ol>
 </div>
-<h2 id="not-the-platform">Shopify SEO isn't a different discipline, it's the same discipline against different constraints</h2>
-<p>Google doesn't rank Shopify stores by a different rulebook than WordPress or custom-built sites. What changes is where the risk concentrates: Shopify's collection and variant system, its theme rendering, and its app ecosystem create specific failure patterns that a generic SEO checklist misses.</p>
-<h2 id="issues">The 5 issues we find most often</h2>
-<h3>1. Duplicate URLs from collection filters</h3>
-<p>Filtering by color, size or price generates a new URL for every combination (<code>?color=red&amp;size=m</code>), and by default Shopify indexes many of these as separate pages competing with the main collection page. Without canonical tags pointing back to the clean collection URL, or a deliberate no-index rule on filter parameters, you're diluting your own ranking signal across dozens of near-identical pages.</p>
-<h3>2. Templated collection and product descriptions</h3>
-<p>Themes make it easy to leave every collection page with the same one-line description, and to reuse manufacturer copy across near-identical product variants. Google's Core Updates since 2024 have specifically targeted this pattern. Each collection needs enough unique text to justify its own ranking; each product needs at least one paragraph the manufacturer didn't write.</p>
-<h3>3. Title tags you don't fully control</h3>
-<p>Shopify auto-generates title tags from the product or collection name plus your store name, which works until you have fifty similar variants competing for the same title pattern. Manually editing the highest-traffic pages' titles and meta descriptions is low effort, high impact, and the single most under-used lever we see in audits.</p>
-<h3>4. App bloat and Core Web Vitals</h3>
-<p>Reviews widgets, upsell popups, live chat, and analytics trackers each add their own JavaScript, often loaded on every page regardless of whether that page needs it. This is the most common cause of a poor Largest Contentful Paint or high Total Blocking Time on Shopify stores — not the platform, but what's been bolted onto it.</p>
-<h3>5. Missing or inconsistent Product structured data</h3>
-<p>Most themes ship with basic <code>Product</code> schema, but it often breaks or falls out of sync once apps modify pricing, variants, or reviews display. Google documents this markup as a way to become eligible for rich results (price, availability, reviews) — worth checking directly in Google's Rich Results Test rather than assuming your theme still has it right.</p>
 <div class="article-callout">
-<p>Want to know which of these apply to your store, and in what order to fix them? <a href="/request-audit.html">Request a Shopify-focused audit</a>.</p>
+<p><strong>In short:</strong> Shopify handles the technical basics of SEO properly. The risks sit elsewhere: collection filters, especially when an app generates them, theme templates, the weight of installed apps, and Product markup that drifts out of sync. This guide covers five checks, with what the documentation establishes and what you still need to verify on your own store.</p>
 </div>
-<h2 id="what-we-check">What a Shopify audit from Away SEO covers</h2>
+<h2 id="platform">Shopify is not a separate kind of SEO, but it has sensitive spots</h2>
+<p>A Shopify store follows the same ranking rules as a WordPress site or a custom build. What changes is where mistakes tend to hide: the collection and filter system, the theme templates, and the app ecosystem. A generic SEO checklist often misses these three areas because it does not know where to look inside Shopify.</p>
+<h2 id="checks">Five checks to run on your store</h2>
+<h3>1. Filter URLs on collection pages</h3>
+<p>When a visitor filters a collection by color, size or price, the page address changes. A collection with a handful of filters can quietly produce a large number of URL variants for almost identical content.</p>
+<p><strong>What Shopify already does.</strong> According to several practitioner analyses (we did not find an official Shopify page that spells it out), the default robots.txt already blocks sort parameters and tag combinations, and pages filtered with the native filtering point their canonical tag to the clean collection URL. Treat this as something to confirm on your store, not to assume.</p>
+<p><strong>Where it gets complicated.</strong> A third-party filter app, a modified theme or internal links pointing to filtered URLs can change that behavior.</p>
+<p><strong>Documented by Google.</strong> If you do not need faceted navigation URLs to be indexed, Google recommends preventing their crawling with robots.txt. The canonical link element and the nofollow attribute are described as other ways to signal a preference (<a href="https://developers.google.com/crawling/docs/faceted-navigation" rel="noopener">Google Search Central, faceted navigation</a>).</p>
+<p><strong>Our recommendation.</strong> List the URL parameters your filters really generate, apps included. Open the source of a filtered page and read the canonical it outputs. Then decide filter by filter: blocked, canonicalized, or turned into a real collection page when real search demand justifies it. Shopify lets you customize robots.txt through a dedicated <code>robots.txt.liquid</code> template.</p>
+<h3>2. Identical collection and product descriptions</h3>
+<p>It is tempting to leave every collection with the same one line introduction, and to reuse the manufacturer's text across every variant of a product. The risk is twofold: pages that look too alike to justify one ranking each, and descriptions that ten other stores publish word for word.</p>
+<p>There is no numeric rule here, so we present this as a recommendation, not as a documented requirement. A text that only you can write (real use, a comparison, sizing or care constraints) gives a page a reason to exist that the manufacturer's copy does not.</p>
+<p><strong>Our recommendation.</strong> Give each collection its own introduction. Give each product at least one paragraph the manufacturer did not write. Start with the pages that bring in the most revenue.</p>
+<h3>3. Title tags and meta descriptions</h3>
+<p>By default, Shopify builds a title from the product or collection name followed by your store name. That works until dozens of pages end up with near identical titles, or titles too long to display in full. The fields to customize exist in the admin, on every product, collection and page.</p>
+<p>This is a small job with a visible payoff, so start with your ten most important pages. Aim for roughly 60 characters: display depends on pixel width, and search engines may rewrite a title anyway. Bing's webmaster tools flagged overly long titles on an earlier version of this very guide, which is why we insist on it.</p>
+<h3>4. App weight and Core Web Vitals</h3>
+<p>Every installed app can load its own JavaScript: review widget, upsell popup, live chat, tracking tool. Depending on how it is integrated, that code may load on every page, including pages that do not need it. The number of apps matters less than what each one loads, and when.</p>
+<p><strong>Our recommendation.</strong> Measure Core Web Vitals on real pages (home, collection, product), favoring field data when it exists. Then test the effect of removing one app at a time, on a copy of the theme. Remember leftovers too: an uninstalled app can leave code behind in the theme.</p>
+<h3>5. Product structured data</h3>
+<p>Most Shopify themes include basic <code>Product</code> markup. It can still break or contradict itself when an app changes the price, the variants or the review display, or when the theme and an app each publish their own markup.</p>
+<p><strong>Documented by Google.</strong> Product markup makes a product page eligible for rich results such as price, availability and reviews (<a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener">Google Search Central, Product structured data</a>).</p>
+<p><strong>Our recommendation.</strong> Test your product pages with Google's Rich Results Test, compare the marked up price and availability with what the page displays, and look for duplicate Product blocks in the source code.</p>
+<div class="article-callout">
+<p>Want to know which of these five points apply to your store, and in what order to fix them? <a href="/request-audit.html">Request a targeted Shopify audit</a>, or start with the <a href="/free-flash-test.html">free flash test</a> (up to 3 URLs).</p>
+</div>
+<h2 id="checklist">A concrete checklist</h2>
+<ul>
+<li>Read the canonical in the source of a filtered collection page,</li>
+<li>Check the robots.txt your store actually serves,</li>
+<li>Rewrite the titles and meta descriptions of your ten most important pages,</li>
+<li>Give your top collections and products text that is really yours,</li>
+<li>Measure Core Web Vitals on real pages, then test removing one app at a time on a copy of the theme,</li>
+<li>Run your product pages through Google's Rich Results Test and compare the marked up price with the displayed one.</li>
+</ul>
+<h2 id="audit">What a Shopify audit at Away SEO covers</h2>
 <ul>
 <li>Collection and filter URL structure, canonical and indexing rules,</li>
-<li>Product and collection content depth across your highest-traffic pages,</li>
-<li>Title tag and meta description review, prioritized by traffic and margin,</li>
-<li>App-by-app performance impact on Core Web Vitals,</li>
-<li>Product structured data validation against Google's current documentation.</li>
+<li>Depth of product and collection content on your highest traffic pages,</li>
+<li>Review of title tags and meta descriptions, prioritized by traffic and margin,</li>
+<li>Impact of each app on Core Web Vitals,</li>
+<li>Validation of Product structured data against Google's current documentation.</li>
 </ul>
-<p>Every audit is done manually against your actual store, not generated from a generic template. See the <a href="/services.html">full list of audit types and pricing</a>.</p>
+<p>Every finding is checked by hand on your real store, not generated from a template. See the <a href="/services.html">details of each audit type and its price</a>.</p>
 <h2 id="faq">Frequently asked questions</h2>
-<h3>Does Shopify have built-in SEO problems compared to WordPress?</h3>
-<p>Not inherently. Shopify handles basic technical SEO (sitemaps, HTTPS, mobile rendering) well out of the box. The recurring issues come from how collections, filters, and themes are configured, not from the platform itself.</p>
-<h3>Can I fix Shopify SEO issues without a developer?</h3>
-<p>Some fixes (title tags, meta descriptions, alt text, collection descriptions) can be done directly in the Shopify admin. Others (canonical rules on filtered URLs, structured data, theme performance) usually need theme code changes.</p>
-<h3>Which Shopify apps commonly slow down a store?</h3>
-<p>Any app injecting its own JavaScript on every page — reviews widgets, upsell popups, trackers — adds render-blocking weight. The number of apps matters less than what each one loads on pages that don't need it.</p>
+<h3>Does Shopify have built-in SEO problems compared with WordPress?</h3>
+<p>Not inherently. Shopify handles the technical basics (sitemaps, HTTPS, mobile rendering) by default. The recurring problems come from how collections, filters and themes are set up, not from the platform itself.</p>
+<h3>Can you fix Shopify SEO without a developer?</h3>
+<p>Some fixes (titles, meta descriptions, alt text, collection descriptions) are done directly in the Shopify admin. Others (canonical rules on filtered URLs, structured data, theme performance) usually require changes to the theme code.</p>
+<h3>Which Shopify apps most often slow a store down?</h3>
+<p>Any app that injects its own JavaScript on every page, such as review widgets, upsell popups or trackers, adds render-blocking weight. What each app loads on pages that do not need it matters more than the number of apps.</p>
+<h3>Is the free flash test enough to know where my store stands?</h3>
+<p>It covers up to 3 URLs and returns the 3 priority findings. It gives you a first read, not a full audit. <a href="/free-flash-test.html">Request the free flash test</a>.</p>
 <h2 id="further-reading">Further reading</h2>
 <ul>
-<li><a href="/services.html">See our SEO, AEO and GEO audit services</a></li>
-<li><a href="/blog-google-may-2026-update-ecommerce.html">Google's May 2026 Update and Universal Cart: what it means for ecommerce</a></li>
+<li><a href="/services.html">See the details of our SEO, AEO and GEO audits</a></li>
+<li>Source: <a href="https://developers.google.com/crawling/docs/faceted-navigation" rel="noopener">Google Search Central, managing crawling of faceted navigation URLs</a></li>
+<li>Source: <a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener">Google Search Central, Product structured data</a></li>
+<li>Practitioner analyses, not official Shopify documentation: <a href="https://visionary-marketing.co.uk/blog/shopify-robots-txt" rel="noopener">Shopify robots.txt</a> and <a href="https://sherocommerce.com/blogs/insights/faceted-navigation-seo-shopify" rel="noopener">faceted navigation on Shopify</a></li>
+<li><a href="/blog-google-may-2026-update-ecommerce.html">Google's May 2026 Update and Universal Cart</a></li>
 <li><a href="/request-audit.html">Request a Shopify SEO audit</a></li>
 </ul>
 </div>
+
+
 <footer>
     © 2026 Away SEO — SEO, AEO &amp; GEO Consultant<br/>
 <div class="footer-links">
