@@ -4,9 +4,10 @@
 
 ## Pages
 
-- [Home](https://away-seo.com/) — Online visibility diagnostics & strategy. Specialties, client reviews, FAQ.
+- [Home](https://away-seo.com/) — Online visibility diagnostics & strategy. Specialties and FAQ.
 - [Services & Pricing](https://away-seo.com/services.html) — Detailed SEO, AEO and GEO services: technical audit ($49), on-page ($79), off-page ($79), local ($59), AEO/GEO ($59), full audit ($199).
 - [About](https://away-seo.com/about.html) — About the consultant, expertise, and direct contact form.
+- [Blog: Google September 2026 spam update](https://away-seo.com/blog-google-september-2026-spam-update.html) — Dates confirmed on the Search Status Dashboard and a 5 step method to measure the impact on traffic.
 - [Client Reviews](https://away-seo.com/reviews.html) — Read client reviews and leave your own. All reviews are moderated.
 - [Request an audit](https://away-seo.com/request-audit.html) — Form to request a specific audit type. Response within 48 hours.
 
@@ -27,7 +28,7 @@
 - Currency: US dollars
 - Service area: worldwide. Primary markets: United States, Canada (English and French), United Kingdom. Secondary: France, Spain, Australia
 - Site languages: English (root URLs), French (/fr/), Spanish (/es/)
-- Last updated: September 29, 2026
+- Last updated: October 29, 2026
 
 ## Other languages
 
