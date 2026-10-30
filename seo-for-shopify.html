@@ -176,7 +176,7 @@
 <p>When a visitor filters a collection by color, size or price, the page address changes. A collection with a handful of filters can quietly produce a large number of URL variants for almost identical content.</p>
 <p><strong>What Shopify already does.</strong> According to several practitioner analyses (we did not find an official Shopify page that spells it out), the default robots.txt already blocks sort parameters and tag combinations, and pages filtered with the native filtering point their canonical tag to the clean collection URL. Treat this as something to confirm on your store, not to assume.</p>
 <p><strong>Where it gets complicated.</strong> A third-party filter app, a modified theme or internal links pointing to filtered URLs can change that behavior.</p>
-<p><strong>Documented by Google.</strong> If you do not need faceted navigation URLs to be indexed, Google recommends preventing their crawling with robots.txt. The canonical link element and the nofollow attribute are described as other ways to signal a preference (<a href="https://developers.google.com/crawling/docs/faceted-navigation" rel="noopener">Google Search Central, faceted navigation</a>).</p>
+<p><strong>Documented by Google.</strong> If you do not need faceted navigation URLs to be indexed, Google recommends preventing their crawling with robots.txt. The canonical link element and the nofollow attribute are described as other ways to signal a preference (<a href="https://developers.google.com/crawling/docs/faceted-navigation" rel="noopener" target="_blank">Google Search Central, faceted navigation</a>).</p>
 <p><strong>Our recommendation.</strong> List the URL parameters your filters really generate, apps included. Open the source of a filtered page and read the canonical it outputs. Then decide filter by filter: blocked, canonicalized, or turned into a real collection page when real search demand justifies it. Shopify lets you customize robots.txt through a dedicated <code>robots.txt.liquid</code> template.</p>
 <h3>2. Identical collection and product descriptions</h3>
 <p>It is tempting to leave every collection with the same one line introduction, and to reuse the manufacturer's text across every variant of a product. The risk is twofold: pages that look too alike to justify one ranking each, and descriptions that ten other stores publish word for word.</p>
@@ -190,7 +190,7 @@
 <p><strong>Our recommendation.</strong> Measure Core Web Vitals on real pages (home, collection, product), favoring field data when it exists. Then test the effect of removing one app at a time, on a copy of the theme. Remember leftovers too: an uninstalled app can leave code behind in the theme.</p>
 <h3>5. Product structured data</h3>
 <p>Most Shopify themes include basic <code>Product</code> markup. It can still break or contradict itself when an app changes the price, the variants or the review display, or when the theme and an app each publish their own markup.</p>
-<p><strong>Documented by Google.</strong> Product markup makes a product page eligible for rich results such as price, availability and reviews (<a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener">Google Search Central, Product structured data</a>).</p>
+<p><strong>Documented by Google.</strong> Product markup makes a product page eligible for rich results such as price, availability and reviews (<a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener" target="_blank">Google Search Central, Product structured data</a>).</p>
 <p><strong>Our recommendation.</strong> Test your product pages with Google's Rich Results Test, compare the marked up price and availability with what the page displays, and look for duplicate Product blocks in the source code.</p>
 <div class="article-callout">
 <p>Want to know which of these five points apply to your store, and in what order to fix them? <a href="/request-audit.html">Request a targeted Shopify audit</a>, or start with the <a href="/free-flash-test.html">free flash test</a> (up to 3 URLs).</p>
@@ -225,9 +225,9 @@
 <h2 id="further-reading">Further reading</h2>
 <ul>
 <li><a href="/services.html">See the details of our SEO, AEO and GEO audits</a></li>
-<li>Source: <a href="https://developers.google.com/crawling/docs/faceted-navigation" rel="noopener">Google Search Central, managing crawling of faceted navigation URLs</a></li>
-<li>Source: <a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener">Google Search Central, Product structured data</a></li>
-<li>Practitioner analyses, not official Shopify documentation: <a href="https://visionary-marketing.co.uk/blog/shopify-robots-txt" rel="noopener">Shopify robots.txt</a> and <a href="https://sherocommerce.com/blogs/insights/faceted-navigation-seo-shopify" rel="noopener">faceted navigation on Shopify</a></li>
+<li>Source: <a href="https://developers.google.com/crawling/docs/faceted-navigation" rel="noopener" target="_blank">Google Search Central, managing crawling of faceted navigation URLs</a></li>
+<li>Source: <a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener" target="_blank">Google Search Central, Product structured data</a></li>
+<li>Practitioner analyses, not official Shopify documentation: <a href="https://visionary-marketing.co.uk/blog/shopify-robots-txt" rel="noopener" target="_blank">Shopify robots.txt</a> and <a href="https://sherocommerce.com/blogs/insights/faceted-navigation-seo-shopify" rel="noopener" target="_blank">faceted navigation on Shopify</a></li>
 <li><a href="/blog-google-may-2026-update-ecommerce.html">Google's May 2026 Update and Universal Cart</a></li>
 <li><a href="/request-audit.html">Request a Shopify SEO audit</a></li>
 </ul>
