@@ -137,14 +137,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (auditType) {
     const select = document.getElementById('type_audit');
     if (select) {
-      const typeMap = {
-        'technique': 'Technique - $49',
-        'onpage': 'On-page - $79',
-        'offpage': 'Off-page - $79',
-        'local': 'Local/GBP - $59',
-        'aeo-geo': 'GEO/AEO - $59',
-        'complet': 'Complet - $199'
-      };
+      const P = { technique:['Technique',99,89], onpage:['On-page',129,119], offpage:['Off-page',129,119], local:['Local/GBP',99,89], 'aeo-geo':['GEO/AEO',99,89], complet:['Complet',399,349] };
+      const typeMap = {};
+      Object.keys(P).forEach(k => { typeMap[k] = P[k][0] + ' - ' + (PAGE_LANG === 'en' ? '$' + P[k][1] : P[k][2] + ' €'); });
       const value = typeMap[auditType.toLowerCase()] || '';
       if (value) {
         for (let i = 0; i < select.options.length; i++) {
