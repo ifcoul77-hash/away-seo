@@ -3,13 +3,12 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
+<meta content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://formspree.io https://nbuexyhwmomaaakyfasn.supabase.co https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'" http-equiv="Content-Security-Policy"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Prueba flash gratuita de tu sitio web | Away SEO</title>
 <meta content="Envía hasta 3 URLs de tu sitio y recibe 3 hallazgos SEO prioritarios en 3 días hábiles. Gratis, sin compromiso, plazas limitadas cada mes." name="description"/><link href="https://away-seo.com/es/prueba-flash-gratuita.html" rel="canonical"/><link href="https://away-seo.com/free-flash-test.html" hreflang="en" rel="alternate"/><link href="https://away-seo.com/fr/test-flash-gratuit.html" hreflang="fr" rel="alternate"/><link href="https://away-seo.com/es/prueba-flash-gratuita.html" hreflang="es" rel="alternate"/><link href="https://away-seo.com/free-flash-test.html" hreflang="x-default" rel="alternate"/><meta content="website" property="og:type"/><meta content="Away SEO" property="og:site_name"/><meta content="Prueba flash gratuita de tu sitio web | Away SEO" property="og:title"/><meta content="Envía hasta 3 URLs de tu sitio y recibe 3 hallazgos SEO prioritarios en 3 días hábiles. Gratis, sin compromiso, plazas limitadas cada mes." property="og:description"/><meta content="https://away-seo.com/es/prueba-flash-gratuita.html" property="og:url"/><meta content="es_ES" property="og:locale"/><meta content="https://away-seo.com/logo.webp" property="og:image"/><meta content="summary" property="twitter:card"/>
 
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/></noscript>
+<link as="font" crossorigin="" href="/fonts/inter-latin-wght-normal.woff2" rel="preload" type="font/woff2"/>
 <link href="/favicon.ico" rel="icon" sizes="any"/>
 <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -29,22 +28,22 @@
   }
 }</script>
 <script type="application/ld+json">{
- "@context": "https://schema.org",
- "@type": "BreadcrumbList",
- "itemListElement": [
-  {
-   "@type": "ListItem",
-   "position": 1,
-   "name": "Away SEO",
-   "item": "https://away-seo.com/es/"
-  },
-  {
-   "@type": "ListItem",
-   "position": 2,
-   "name": "Prueba flash gratuita",
-   "item": "https://away-seo.com/es/prueba-flash-gratuita.html"
-  }
- ]
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Away SEO",
+      "item": "https://away-seo.com/es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Prueba flash gratuita",
+      "item": "https://away-seo.com/es/prueba-flash-gratuita.html"
+    }
+  ]
 }</script>
 </head>
 <body>
@@ -87,29 +86,18 @@
 <input name="_subject" type="hidden" value="Test flash gratuit - Away SEO"/>
 <input name="type_demande" type="hidden" value="flash"/>
 <input aria-hidden="true" autocomplete="off" name="_gotcha" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" tabindex="-1" type="text"/>
-<div class="form-group"><label for="nom">Tu nombre</label><input id="nom" name="nom" required="" type="text"/></div>
-<div class="form-group"><label for="email">Tu correo electrónico</label><input id="email" name="email" required="" type="email"/></div>
-<div class="form-group"><label for="urls">URLs a probar (máximo 3, una por línea)</label><textarea id="urls" name="urls" required="" rows="3"></textarea></div>
-<div class="form-group"><label for="cms">Plataforma del sitio (Shopify, WooCommerce, WordPress, otra)</label><input id="cms" name="cms" type="text"/></div>
-<div class="form-group"><label for="objectif">Lo que más te preocupa de este sitio (opcional)</label><textarea id="objectif" name="objectif" rows="3"></textarea></div>
+<div class="form-group"><label for="nom">Tu nombre</label><input id="nom" name="nom" required="" maxlength="80" autocomplete="name" type="text"/></div>
+<div class="form-group"><label for="email">Tu correo electrónico</label><input id="email" name="email" required="" maxlength="120" autocomplete="email" type="email"/></div>
+<div class="form-group"><label for="urls">URLs a probar (máximo 3, una por línea)</label><textarea id="urls" name="urls" required="" maxlength="600" rows="3"></textarea></div>
+<div class="form-group"><label for="cms">Plataforma del sitio (Shopify, WooCommerce, WordPress, otra)</label><input id="cms" name="cms" maxlength="80" type="text"/></div>
+<div class="form-group"><label for="objectif">Lo que más te preocupa de este sitio (opcional)</label><textarea id="objectif" name="objectif" maxlength="1500" rows="3"></textarea></div>
 <label class="form-check"><input name="consentement_traitement" required="" type="checkbox" value="oui"/><span>Acepto que Away SEO utilice mi correo y las URLs enviadas para realizar la prueba, enviarme los resultados y responder a mi solicitud (consulta la <a href="/es/politica-de-privacidad.html">política de privacidad</a>).</span></label>
 <label class="form-check"><input name="consentement_etude" type="checkbox" value="oui"/><span>Opcional: acepto que hallazgos anonimizados y agregados de mi prueba puedan usarse en un estudio publicado. No se citará ningún nombre de sitio ni de empresa.</span></label>
 <button class="btn-submit" type="submit">Solicitar mi prueba flash gratuita</button>
 </form>
 <p class="pricing-note" style="text-align:center;margin-top:16px;">Tras la entrega, te pediré un breve comentario opcional. Nunca es obligatorio ni está ligado a una valoración positiva.</p>
 </div>
-<script>
-document.getElementById("flashForm").addEventListener("submit", function (e) {
-  var v = this.elements["urls"].value.split(/[\s,;]+/).filter(Boolean);
-  var old = this.querySelector(".flash-err"); if (old) old.remove();
-  if (v.length > 3) {
-    e.preventDefault(); e.stopImmediatePropagation();
-    var p = document.createElement("p"); p.className = "flash-err";
-    p.style.cssText = "color:#dc2626;font-size:14px;text-align:center;margin-top:12px;";
-    p.textContent = "Introduce como máximo 3 URLs, una por línea."; this.querySelector(".btn-submit").insertAdjacentElement("afterend", p);
-  }
-});
-</script>
+<script defer="" src="/js/flash.js"></script>
 </div>
 <footer>
     © 2026 Away SEO — SEO, AEO &amp; GEO Consultant<br/>
@@ -121,7 +109,7 @@ document.getElementById("flashForm").addEventListener("submit", function (e) {
       <a href="/es/prueba-flash-gratuita.html">Prueba flash gratuita</a> ·
       <a href="/es/opiniones.html">Opiniones</a> ·
       <a href="/es/sobre-mi.html">Sobre mí</a> ·
-      <a href="/es/politica-de-privacidad.html">Política de privacidad</a>
+      <a href="/es/politica-de-privacidad.html">Política de privacidad</a> · <a href="/es/aviso-legal.html">Aviso legal</a> · <a href="https://wa.me/22370490101?text=Hola%2C%20me%20gustar%C3%ADa%20hablar%20de%20una%20auditor%C3%ADa%20SEO." rel="noopener" target="_blank">WhatsApp</a>
  · <a href="/free-flash-test.html" hreflang="en" lang="en">English</a> · <a href="/fr/test-flash-gratuit.html" hreflang="fr" lang="fr">Français</a></div>
 <div class="footer-tagline">🌐 <span>Atendiendo a clientes de todo el mundo</span></div>
 </footer>

@@ -1,8 +1,10 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
-
+(function () {
+'use strict';
+var createClient = window.supabase && window.supabase.createClient;
+if (!createClient) { return; }
 const supabaseUrl = 'https://nbuexyhwmomaaakyfasn.supabase.co';
 const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5idWV4eWh3bW9tYWFha3lmYXNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg3NTYyMTQsImV4cCI6MjEwNDMzMjIxNH0.Nfd8fQeze0idl5k0R56jWl0AGJkFbufueFXOLpfpOeI';
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+const sb = createClient(supabaseUrl, supabaseAnonKey);
 
 const reviewsList = document.getElementById('reviews-list');
 const reviewForm = document.getElementById('review-form');
@@ -39,7 +41,7 @@ function initials(name) {
 }
 
 async function loadReviews() {
-  const { data, error } = await supabase
+  const { data, error } = await sb
     .from('reviews')
     .select('name, location, rating, text, created_at')
     .eq('approved', true)
@@ -128,7 +130,7 @@ reviewForm.addEventListener('submit', async (e) => {
     return;
   }
 
-  const { error } = await supabase.from('reviews').insert([payload]);
+  const { error } = await sb.from('reviews').insert([payload]);
 
   if (error) {
     reviewStatus.style.display = 'block';
@@ -153,3 +155,4 @@ reviewForm.addEventListener('submit', async (e) => {
 });
 
 loadReviews();
+})();
