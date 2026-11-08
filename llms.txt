@@ -29,7 +29,7 @@
 - Currency: US dollars
 - Service area: worldwide. Primary markets: United States, Canada (English and French), United Kingdom. Secondary: France, Spain, Australia
 - Site languages: English (root URLs), French (/fr/), Spanish (/es/)
-- Last updated: November 1, 2026
+- Last updated: November 8, 2026
 
 ## Other languages
 
